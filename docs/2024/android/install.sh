@@ -4,7 +4,7 @@ cd
 if [ -d OpenXM ]; then
   echo "'OpenXM' directory already exists. Please rename/remove it and try \"sh install.sh\" again."
 else
-  curl -O https://openxm-org.github.io/setup/android/asir_aarch64.tar.gz
+  curl -O https://openxm-org.github.io/setup/2024/android/asir_aarch64.tar.gz
   echo "Extracting Asir archive ..."
   tar xf asir_aarch64.tar.gz
   echo "Done!"
