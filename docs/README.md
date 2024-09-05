@@ -1,5 +1,3 @@
-<title>Risa/Asir Installers</title>
-
 Installation of Risa/Asir
 -------------------------
 
