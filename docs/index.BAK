@@ -7,9 +7,10 @@
     <link rel="icon" href="data:,">
   </head>
   <body>
+  <h2>Installation of Risa/Asir</H2>
   <ul>
-    <li><a href="./android/index.html>Asir for Android</a>, (command line version on termux)</li>
-    <li>Asir for iOS, (command line version on iSH)</li> 
+    <li><a href="./android/index.html">Android</a>, (command line version on Termux)</li>
+    <li><a href="./ios/index.html">iPhone and iPad</a>, (command line version on iSH Shell)</li>
   </ul>
   </body>
 </html>

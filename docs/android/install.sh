@@ -4,13 +4,10 @@ cd
 if [ -d OpenXM ]; then
   echo "'OpenXM' directory already exists. Please rename/remove it and try \"sh setup.sh\" again."
 else
-  curl -O https://staff.fukuoka-edu.ac.jp/fujimoto/android/asir_aarch64.tar.gz
+  curl -O https://openxm-org.github.io/setup/android/asir_aarch64.tar.gz
   echo "Extracting Asir archive ..."
   tar xf asir_aarch64.tar.gz
   echo "Done!"
-  if [ ! -f .feprc ]; then
-    cp OpenXM/rc/feprc .feprc
-  fi
   if [ ! -f .profile ]; then
     cp ../usr/etc/profile .profile
   fi
