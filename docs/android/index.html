@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Asir for Android</title>
+  </head>
+  <body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 192);" alink="#ff00ff" link="#0000ff" vlink="#800080">
+    <h1>Asir for Android</h1>
+    <hr>
+    <p><b>Arm 64bit version</b></p>
+    <p>This is a binary of <a href="http://www.math.kobe-u.ac.jp/Asir/index.html">Risa/Asir</a> (version 20220911) for Android (<b>Arm 64bit</b>).<br>
+This binary was checked on Android 11(Surface Duo 2), Android 12(Google Pixel 3a XL) and Android 13(Google Pixel 6a).
+</p>
+    <ul>
+      <li>binary <a href="asir_aarch64.tar.gz">asir_aarch64.tar.gz</a> including fep(a frontend for asir) and PARI/GP(a computer algebra system for number theory).</li>
+      <li>screenshot on <a href="asir_on_pixel3a.png">Google Pixel 3a XL</a></li>
+    </ul>
+
+    Installation:<br>
+    <ol>
+      <li>Install <a href="https://f-droid.org/en/packages/com.termux/">Termux</a> to your Android device through <a href="https://f-droid.org/">F-Droid</a>.<br>
+<b>The Google Play version of Termux is no longer updated.</b> (cf. <a href="https://wiki.termux.com/wiki/Termux_Google_Play">Official Announcement</a>)<br>
+- Download F-Droid.apk and install it.<br>
+- Open F-Droid, search Termux, and select/install "Termux Terminal emulator with packages".<br>
+- Open Termux and update packages as follows:<br>
+$ pkg upgrade<br>
+</li>
+<!--
+      <li>Install <a href="https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard">Hacker's Keyboard</a> to your Android through Google Play.<br>
+      Then, select 'Hacker's Keyboard' in the 'Keyboard' menu of Terminal IDE.</li>
+-->
+      <li>Execute the following on Termux:<br>
+$ curl -O https://staff.fukuoka-edu.ac.jp/fujimoto/asiroid/setup.sh<br>
+$ sh setup.sh<br>
+$ exit</li>
+      <li>Re-open Termux and execute the following:<br>
+$ asir</li>
+    </ol>
+
+    <p>Change Log:</p>
+    2022/10/10
+    <ul>
+      <li>This binary does not need the environment variable LD_LIBRARY_PATH because it has the DT_RUNPATH attribute. 
+We can check it by the following command:<br>
+$ objdump -x asir | grep RUNPATH<br>
+<b>On Android 7 or higher, DT_RUNPATH is used instead of LD_LIBRARY_PATH.</b> 
+(cf. <a href="https://wiki.termux.com/wiki/Differences_from_Linux">Termux is not FHS compliant</a>)
+      </li>
+    </ul>
+    2022/9/27
+    <ul>
+      <li>Asir was updated to the version 20220911.</li>
+      <li>asir-contrib library was included.</li>
+    </ul>
+    2022/9/5
+    <ul>
+      <li>The official version of Termux was changed from <b>Google Play</b> to <b>F-Droid</b>.</li>
+      <li>Asir was updated to the version 20220403.</li>
+      <li>An install script 'setup.sh' was added.</li>
+      <li>gp, an interactive shell giving access to PARI library, was included.</li>
+    </ul>
+    2019/12/22
+    <ul>
+      <li>Asir was updated to the version 20191212.</li>
+    </ul>
+
+<hr>
+    <p><b>Arm 32bit version</b></p>
+    <p>This is a binary of <a href="http://www.math.kobe-u.ac.jp/Asir/index.html">Risa/Asir</a> (version 20191212) for Android (<b>Arm 32bit</b>).<br>
+This binary was checked on Android 6.0.1(Google Nexus 7 2013).
+</p>
+    <ul>
+      <li>binary <a href="asir_arm32.tar.gz">asir_arm32.tar.gz</a> including fep(a frontend for asir) and cpp(a portable C preprocessor - mcpp).</li>
+    </ul>
+
+    Installation:<br>
+    <ol>
+      <li>Install <a href="https://play.google.com/store/apps/details?id=com.termux">Termux</a> to your Android through Google Play.</li>
+<!--
+      <li>Install <a href="https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard">Hacker's Keyboard</a> to your Android through Google Play.<br>
+      Then, select 'Hacker's Keyboard' in the 'Keyboard' menu of Terminal IDE.</li>
+-->
+      <li>Execute the following on Termux:<br>
+$ apt install wget<br>
+$ wget https://staff.fukuoka-edu.ac.jp/fujimoto/asiroid/asir_arm32.tar.gz<br>
+$ tar zxf asir_arm32.tar.gz<br>
+$ cp OpenXM/rc/feprc .feprc<br>
+$ cp ../usr/etc/profile .profile<br>
+$ echo "source ./OpenXM/rc/bashrc" >> .profile<br>
+$ exit</li>
+      <li>Reboot Termux</li>
+      <li>Execute the following on Termux:<br>
+$ fep asir</li>
+    </ol>
+
+    <p><b>Previous version</b></p>
+    <ul>
+      <li>See my old site <a href="asiroid32.html">Asir on Android</a></li>
+    </ul>
+<hr>
+    <p>Last updated on Oct 10th, 2022<br>
+    Copyright(c) 2019-2022, Mitsushi Fujimoto. All Rights Reserved. </p>
+  </body>
+</html>
