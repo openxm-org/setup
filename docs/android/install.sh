@@ -2,7 +2,7 @@
 echo "This is Asir installer for Android."
 cd 
 if [ -d OpenXM ]; then
-  echo "'OpenXM' directory already exists. Please rename/remove it and try \"sh setup.sh\" again."
+  echo "'OpenXM' directory already exists. Please rename/remove it and try \"sh install.sh\" again."
 else
   curl -O https://openxm-org.github.io/setup/android/asir_aarch64.tar.gz
   echo "Extracting Asir archive ..."

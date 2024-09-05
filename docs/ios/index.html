@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Asir for iOS</title>
+  </head>
+  <body>
+    <h1>Asir for iSH Shell/iOS</h1>
+    <hr>
+    <p>
+    This is a binary of <a href="http://www.math.kobe-u.ac.jp/Asir/index.html"><b>Risa/Asir</b></a> (version 20220911) for iOS. <br>
+    This binary was checked on iPadOS15.7(iPad Pro 12.9-inch gen5). 
+    </p>
+    <ul>
+      <li>binary <a href="asir_ios.tar.gz">asir_ios.tar.gz</a> including fep(a frontend for asir) and PARI/GP(a computer algebra system for number theory).</li>
+      <li>screenshot on <a href="asir_on_iPad_pro.png">iPad Pro 12.9-inch gen5</a></li>
+    </ul>
+
+    <p>Installation:</p>
+    <ol>
+      <li>Install <a href="https://apps.apple.com/us/app/ish-shell/id1436902243"><b>iSH Shell</b></a> to your iPhone or iPad through AppStore. </li>
+      <li>Open <b>iSH</b> and update packages as follows:<br>
+# apk update<br>
+# apk upgrade<br>
+</li>
+      <li>Execute the following on <b>iSH</b>:<br>
+# wget https://openxm-org.github.io/setup/ios/install.sh<br>
+# sh install.sh<br>
+# exit</li>
+      <li>Re-open <b>iSH</b> and execute the following:<br>
+# asir</li>
+    </ol>
+
+    <p>Change Log:</p>
+    2024/9/5
+    <ul>
+      <li>The web page was moved to GitHub Pages.</li>
+    </ul>
+    2022/09/20
+    <ul>
+      <li>Asir was updated to the version 20220911.</li>
+      <li>asir-contrib library was included.</li>
+      <li>gp, an interactive shell giving access to PARI library, was included.</li>
+    </ul>
+    2021/01/15
+    <ul>
+      <li>The URL of iSH Shell was changed from <b>TestFlight</b> to <b>AppStore</b>.</li>
+      <li>An install script 'setup.sh' was added.</li>
+      <li>Asir was updated to the version 20210111.</li>
+    </ul>
+    2020/06/01
+    <ul>
+      <li>iSH Shell was updated to build 68. Since this build, 'load("fctrtest");' can be processed without errors.</li>
+    </ul>
+    2020/03/20
+    <ul>
+      <li>The first release of Asir for iOS using iSH Shell TestFlight version.</li>
+    </ul>
+
+  </body>
+</html>
