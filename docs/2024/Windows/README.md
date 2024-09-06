@@ -1,9 +1,9 @@
 # Asir for Windows
 * * *
 
-- [This(./asir_win64_2024.09.04.msi) is an installer (msi)] of [**Risa/Asir**](http://www.math.kobe-u.ac.jp/OpenXM) (version 20220904) for Windows. 
+- [This is an installer (msi)](./asir_win64_2024.09.04.msi) of [**Risa/Asir**](http://www.math.kobe-u.ac.jp/OpenXM) (version 20220904) for Windows. 
 
-- After installation, execute 
+- After the installation, start asirgui and execute 
 ```
 import("names.rr");
 asir_contrib_update(|update=4);
