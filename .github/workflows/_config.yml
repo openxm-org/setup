@@ -1,0 +1,6 @@
+plugins:
+  - jekyll-polyglot
+languages: ['ja', 'en']
+default_lang: 'en'
+exclude_from_localization: ['msi', 'gz', 'deb']
+parallel_localization: false
