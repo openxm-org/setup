@@ -4,13 +4,10 @@ cd
 if [ -d OpenXM ]; then
   echo "'OpenXM' directory already exists. Please rename/remove it and try \"sh install.sh\" again."
 else
-  wget https://openxm-org.github.io/setup/ios/asir_ios.tar.gz
+  wget https://openxm-org.github.io/setup/2024/ios/asir_ios.tar.gz
   echo "Extracting Asir archive ..."
   tar xf asir_ios.tar.gz
   echo "Done!"
-  if [ ! -f .feprc ]; then
-    cp OpenXM/rc/feprc .feprc
-  fi
   if [ ! -f .profile ]; then
     cp /etc/profile .profile
   fi

@@ -3,16 +3,16 @@ Asir for iSH Shell/iOS
 
 * * *
 
-This is a binary of [**Risa/Asir**](http://www.math.kobe-u.ac.jp/Asir/index.html) (version 20220911) for iOS.  
-This binary was checked on iPadOS15.7(iPad Pro 12.9-inch gen5).
+This is a binary of [**Risa/Asir**](http://www.math.kobe-u.ac.jp/Asir/index.html) (version 20240806) for iOS.  
+This binary was checked on iPadOS17.6.1(iPad Pro 12.9-inch gen5).
 
-*   binary [asir\_ios.tar.gz](asir_ios.tar.gz) including fep(a frontend for asir) and PARI/GP(a computer algebra system for number theory).
+*   binary [asir\_ios.tar.gz](asir_ios.tar.gz) and PARI/GP(a computer algebra system for number theory).
 *   screenshot on [iPad Pro 12.9-inch gen5](asir_on_iPad_pro.png)
 
 Installation:
 
 1.  Install [**iSH Shell**](https://apps.apple.com/us/app/ish-shell/id1436902243) to your iPhone or iPad through AppStore.
-2.  Open **iSH** and update packages as follows:  
+2.  Open **iSH** and update packages as follows:
     \# apk update  
     \# apk upgrade  
     
@@ -25,8 +25,11 @@ Installation:
 
 Change Log:
 
-2024/9/5
+2024/9/7
 
+*   Asir was updated to the version 20240806.
+*   The functionality of the frontend fep has been integrated into Asir.
+*   Fixed issues in the 32-bit environment, including **iSH Shell**.
 *   The web page was moved to GitHub Pages.
 
 2022/09/20
