@@ -12,7 +12,8 @@ This binary was checked on iPadOS17.6.1(iPad Pro 12.9-inch gen5).
 Installation:
 
 1.  Install [**iSH Shell**](https://apps.apple.com/us/app/ish-shell/id1436902243) to your iPhone or iPad through AppStore.
-2.  Open **iSH** and update packages as follows:
+
+2.  Open **iSH** and update packages as follows:  
     \# apk update  
     \# apk upgrade  
     

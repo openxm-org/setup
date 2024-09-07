@@ -5,6 +5,7 @@ if [ -d OpenXM ]; then
   echo "'OpenXM' directory already exists. Please rename/remove it and try \"sh install.sh\" again."
 else
   wget https://openxm-org.github.io/setup/2024/ios/asir_ios.tar.gz
+  apk add tar
   echo "Extracting Asir archive ..."
   tar xf asir_ios.tar.gz
   echo "Done!"
